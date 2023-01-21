@@ -1,0 +1,22 @@
+server:
+  port: 8510
+  servlet:
+    context-path:
+  error:
+    include-stacktrace: always
+logging:
+  level:
+    org.springframework.web: DEBUG
+    srimalar.doc: INFO
+
+spring:
+  application:
+    name: SRIMALAR_DOC
+  profiles:
+    active: dev
+
+management:
+  endpoints:
+    shutdown:
+      sensitive: false
+      enabled: true

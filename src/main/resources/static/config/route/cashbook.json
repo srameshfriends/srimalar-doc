@@ -1,0 +1,8 @@
+[
+  {
+    "id": "finance/index", "html": ["/finance/view/finance-index.html"], "js": "FinanceIndexPage"
+  },
+  {
+    "id": "finance/cashier-session-reset", "html": ["/finance/view/cashier-session-reset.html"], "js": "CashierSessionReset"
+  }
+]

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="Srimalar Ramesh" />
+    <title>SRIMALAR DOCUMENTS</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/bootstrap-grid.min.css" />
+    <link rel="stylesheet" href="css/bootstrap-reboot.min.css" />
+    <link rel="stylesheet" href="css/bootstrap-utilities.min.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/custom.css" />
+</head>
+<body>
+<div class="d-flex" id="wrapper">
+    <!-- Sidebar-->
+    <div class="border-end bg-white" id="sidebar-wrapper">
+        <div class="sidebar-heading p-2">
+            <span id="page-title"></span>
+        </div>
+        <div class="list-group list-group-flush">
+            <a class="list-group-item list-group-item-action list-group-item-light" data-href="shared/company">Index</a>
+        </div>
+    </div>
+    <!-- Page content wrapper-->
+    <div id="page-content-wrapper">
+        <!-- Top navigation-->
+        <nav id="page-navigation-header" class="navbar navbar-expand-lg p-1 border-bottom">
+        </nav>
+        <!-- Page content-->
+        <div class="container-fluid p-2" style="overflow: auto" id="page-dynamic-content">
+        </div>
+    </div>
+    <!--Page Message dialog-->
+    <div class="modal fade" id="page-message-modal"
+         tabindex="-1" aria-labelledby="page-message-label" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="page-message-label">Information</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div id="page-message-box" class="text-danger"></div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<footer class="footer mt-auto py-3 bg-light">
+</footer>
+<script src="js/jquery-3.6.3.min.js"></script>
+<script src="js/bootstrap.bundle.min.js"></script>
+<script src="js/json-table.js"></script>
+<script src="js/page-util.js"></script>
+<script src="js/page-router.js"></script>
+<script>
+    window.addEventListener('DOMContentLoaded', evt => {
+        PageRouter.loadAll(function () {
+            PageRouter.init({
+                mainId:'page-dynamic-content',
+                headerId: 'page-navigation-header',
+                title:'SRIMALAR DOCUMENT'
+            });
+            PageRouter.publish('PAGE_READY');
+        });
+    });
+</script>
+</body>
+</html>

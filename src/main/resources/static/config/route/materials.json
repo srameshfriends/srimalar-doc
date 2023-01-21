@@ -1,0 +1,17 @@
+[
+  {
+    "id": "doc/documents-link", "html": ["/doc/doc-link/documents-link.html"], "js": "DocumentsLinkPage"
+  },
+  {
+    "id": "doc/sql-batch/wfh-sql", "html": ["/doc/sql-batch/wfh-sql.html"]
+  },
+  {
+    "id": "doc/sql-batch/prd-sql", "html": ["/doc/sql-batch/prd-sql.html"]
+  },
+  {
+    "id": "doc/sit-doc/sit-deploy", "html": ["/doc/sit-doc/sit-deploy.html"]
+  },
+  {
+    "id": "doc/test-pc/rdc", "html": ["/doc/test-pc/test-pc-rdc.html"]
+  }
+]
